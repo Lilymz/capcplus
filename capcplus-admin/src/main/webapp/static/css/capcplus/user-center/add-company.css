@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    color: #768399;
+}
+/*顶部导航*/
+.body-header{
+    height: 6%!important;
+}
+.navbar-brand{
+    padding: 0!important;
+}
+.nav-pills{
+    margin-bottom: 0;
+    padding-right: 20px;
+    background: #75b9e6;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+/*侧边栏*/
+.left-slide .leftContainer{
+    height:100%;
+    z-index: 1400;
+    position: fixed;
+}
+.leftContainer li a{
+    text-decoration: none;
+}
+/*窗口小于1200的时候*/
+@media screen and (max-width: 1200px) {
+    .left-slide{
+        visibility: hidden;
+        width: 0%;
+        height: 0px;
+    }
+    .body-container{
+        width: 100%;
+    }
+    .body-container .row{
+        margin-left: 0;
+    }
+}
+/*面包屑*/
+.bread-nav{
+    margin-top: 15px;
+}
+.bread-nav a{
+    text-decoration: none;
+}
+.bread-nav a:hover{
+    color: #1E9FFF!important;
+}
+.step-content,.step1,.step2 ,.step3{
+    padding-left: 0!important;
+}
+#file{
+    cursor: pointer;
+}

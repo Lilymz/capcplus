@@ -1,0 +1,120 @@
+.jw-content{
+    font-family: "noto_sans_sc", sans-serif !important;
+    width: 62px;
+    float: left;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    font-style: normal;
+    color: #01aaed;
+    -webkit-font-smoothing: antialiased;
+}
+.nav-head{
+    z-index: 1000;
+    /*position: fixed;*/
+    padding-right: 300px;
+    padding-left: 200px;
+}
+.navbar-right{
+    margin-right: 10px!important;
+}
+.cverify-title{
+    margin-top: 55px;
+}
+.cverify-title img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    float: left;
+}
+.cverify-title span{
+    position: relative;
+    top: 3px;
+}
+.cverify-title a{
+   text-decoration: none;
+}
+.a-color{
+    color: #3498DB;
+}
+.applicScence{
+    margin-top: 4%;
+}
+.applicScence_title ,.productAdv_title ,.interfaceDoc_title ,.interfaceDocMain ,.commonFAQ_title ,.commonFAQMain{
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+}
+.applicScenceImg img{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+.applicScenceMain{
+    margin-top: 3%;
+}
+.applicScenceAccout{
+    margin-left: 7%;
+}
+.applicScenceAccout h4{
+    color: #3498DB;;
+}
+.applicScenceAccout p{
+    line-height: 30px!important;
+    margin: 0 0 35px;
+    margin-top: 20px;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;
+}
+.productAdv ,.usingClients ,.interfaceDoc{
+    width: 100%;
+    display: inline-block;
+    padding: 60px 0 30px 0;
+}
+.productAdv_title{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+.productAdvMain{
+    margin-top: 30px;
+}
+.productAdvMain .col-md-4{
+    width: 33.3333%;
+    display: inline-block;
+    float: left;
+}
+.advList_l{
+    width: 20%;
+    display: inline-block;
+    float: left;
+}
+.advList_l img{
+    width: 100%;
+    height: auto;
+}
+.advList_R{
+    width: 80%;
+    display: inline-block;
+    float: right;
+    text-align: left;
+    padding-left: 20px;
+}
+.advList_R p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.interfaceDocMain button ,.commonFAQMain button{
+    border: none;
+    font-size: 20px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    background-color: rgb(52, 152, 219);
+    color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jw.elephant.capcplus.mapper.UserMapper">
+    <resultMap id="userMap" type="com.jw.elephant.capcplus.pojo.User">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="account" property="account"/>
+        <result column="password" property="password"/>
+        <result column="balance" property="balance"/>
+        <result column="head_pic" property="headPic"/>
+        <result column="type" property="type"/>
+        <result column="status" property="status"/>
+        <result column="is_super" property="isSuper"/>
+        <result column="company" property="company"/>
+        <result column="email" property="email"/>
+        <result column="phone" property="phone"/>
+        <result column="ip" property="ip"/>
+        <result column="last_login_time" property="lastLoginTime" javaType="java.util.Date"/>
+        <result column="create_time" property="createTime" javaType="java.util.Date"/>
+        <result column="update_time" property="updateTime" javaType="java.util.Date"/>
+    </resultMap>
+    <sql id="_column">
+        id,name,account,password,balance,head_pic,type,is_super,company,email,phone,ip,last_login_time,create_time,update_time
+    </sql>
+    <sql id="_where">
+        <trim prefix="WHERE" prefixOverrides="AND|OR">
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="name != null and name!='' ">
+                AND name like #{name}'%'
+            </if>
+            <if test="account != null and  account!=''">
+                AND account = #{account}
+            </if>
+            <if test="type != null">
+                type = #{type}
+            </if>
+            <if test="isSuper != null">
+                is_super = #{isSuper}
+            </if>
+            <if test="phone != null and phone!='' ">
+                AND phone like #{phone}'%'
+            </if>
+        </trim>
+    </sql>
+    <select id="find" resultType="com.jw.elephant.capcplus.pojo.User" resultMap="userMap">
+        select
+        <include refid="_column"></include>
+        from user
+        where is_del=0 and account=#{param}
+    </select>
+</mapper>

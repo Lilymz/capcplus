@@ -1,0 +1,208 @@
+.body-header{
+    height: 6%!important;
+}
+.navbar-brand{
+    padding: 0!important;
+}
+.nav-pills{
+    margin-bottom: 0;
+    padding-right: 20px;
+    background: #31BDEC;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.content-bread{
+    padding-top: 20px;
+}
+.left-slide .leftContainer{
+    height:100%;
+    z-index: 1400;
+    position: fixed;
+}
+.body-container{
+    height: 900px;
+    padding: 0;
+    margin: 0
+}
+.body-container .nav-slide-header{
+    padding-right: 0;
+}
+/*窗口小于1200的时候*/
+@media screen and (max-width: 1200px) {
+    .left-slide{
+        visibility: hidden;
+        width: 0%;
+        height: 0px;
+    }
+    .body-container{
+        width: 100%;
+    }
+    .body-container .row{
+        margin-left: 0;
+    }
+}
+.content-bread .guide-title{
+    padding-left: 0px;
+    font-size: 15px;
+    font-weight: normal;
+    color: gray;
+}
+.user-guide{
+   border-radius: 15px;
+   background-color: #f5f5f5;
+   height: 265px;
+   margin-right: 15px;
+   padding-right: 0px;
+}
+.guide-title{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+/*用户 steps*/
+.guid-content .step{
+    margin: 40px 10px 40px 50px;
+    height: 60%;
+    border: 3px gray dashed;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.guid-content .step:hover{
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(82,78,78,0.6) ;
+    color: #31BDEC;
+}
+.guid-content .step4{
+    margin-left: 50px!important;
+}
+.guid-content .arrow{
+    margin-top: 100px;
+    width: 80px;
+}
+/*第一步*/
+.guid-content .step .step-content i{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 38px;
+    color: #009688;
+}
+.guid-content .step .step-content>.title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    font-family: 宋体;
+    font-weight: lighter;
+}
+.user-invoce-content-outer{
+    border-radius: 15px;
+    background-color: white;
+    height: 265px;
+    border: 1px #898989 solid;
+    margin-right: 15px!important;
+}
+.user-invoce-content{
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    height: 230px;
+}
+.balance-left .title{
+    float: right;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #768399;
+}
+.balance-left{
+    padding-top: 42px;
+    padding-left: 29px;
+}
+.balance-left .title>div{
+    margin-right: 35px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    vertical-align: middle;
+}
+.balance-left .title>.padding-title{
+    margin-top: 20px;
+}
+.leftContainer li a{
+    text-decoration: none;
+}
+.balance-right{
+    margin-top: 60px;
+    background-color: white;
+}
+.user-status h3{
+    color: #768399;
+}
+.user-status h3{
+    padding-top: 22px;
+    font-size: 20px;
+    font-weight: 10;
+}
+.user-status .status{
+    color: #5FB878;
+}
+.user-status-tip{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #768399;
+    margin-left: 15px;
+}
+.user-status-tip-edit{
+    margin-top: 20px;
+    margin-bottom: 9px;
+    color: #768399;
+    margin-left: 2px;
+    bottom: 2px;
+    position: relative;
+}
+.user-status-tip-edit i{
+    cursor: pointer;
+}
+.user-service-outer{
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: white;
+    height: 265px;
+    border: 1px #898989 solid;
+    margin-right: 15px!important;
+}
+.user-service{
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    height: 230px;
+}
+.server-header .header{
+    margin-top: 10px;
+    padding: 0;
+}
+.server-body{
+    margin-left: 24px;
+    margin-top: 70px;
+}
+.server-body .server{
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 20px;
+    padding-left: 6px;
+    cursor: pointer;
+}
+.server-body .server:hover{
+    animation: server-color 0.5s ease-in-out;
+}
+@keyframes server-color {
+    0%{
+        background-color: #FFFFFF;
+    }
+    100%{
+        background-color: #efbbe7;
+    }
+}
+.balance-left a[type=button]{
+    text-decoration: none;
+}
